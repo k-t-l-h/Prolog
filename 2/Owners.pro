@@ -22,7 +22,7 @@ property = house(adress); car(number, color); animal(nick, species).
 
 predicates
 nondeterm proprietor(name, property).
-nondeterm get_property(name).
+nondeterm get_property(name, property).
 
 clauses
 
@@ -41,9 +41,10 @@ proprietor("Ire", car(125, "white")).
 proprietor("Alex", car(221, "pink")).
 proprietor("Dimon", car(100, "black")).
 
-get_property(NAME):-proprietor(NAME, _).
+get_property(NAME, X):-proprietor(NAME, X).
   
 
 goal
-proprietor("Alex", Y).
+get_property("Alex", X).
+%proprietor("Alex", Y).
   
