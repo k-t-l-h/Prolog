@@ -1,0 +1,24 @@
+/*****************************************************************************
+
+		Copyright (c) My Company
+
+ Project:  LST
+ FileName: LST.PRO
+ Purpose: No description
+ Written by: Visual Prolog
+ Comments:
+******************************************************************************/
+
+include "lst.inc"
+
+predicates
+
+  lst()
+
+clauses
+
+  lst():-!.
+
+goal
+
+  lst().
