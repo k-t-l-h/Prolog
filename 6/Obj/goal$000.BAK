@@ -56,8 +56,7 @@ list_prime([], Res, Res):- !.
 list_prime([H|T], Buf, Res):- isprime(H), !, list_prime(T,[H|Buf], Res).
 list_prime([_|T], Buf, Res):- list_prime(T, Buf, Res).
 
-list_prime_b([], Res):-!.
-list_prime_b([H|T], [H]):- isprime(H), !, list_prime_b(T, Res).
+list_prime_b([], Res).
 list_prime_b([H|T], [H|Res]):- isprime(H), !, list_prime_b(T, Res).
 list_prime_b([_|T], Res):- list_prime_b(T, Res).
 

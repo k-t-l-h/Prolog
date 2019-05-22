@@ -27,7 +27,7 @@ clauses
 max_of2a(A, B, A):- A >= B.
 max_of2a(A, B, B):- B > A.
 
-max_of2b(A, B, A):- A >= B, !.
+max_of2b(A, B, A):- A >= B.
 max_of2b(_, B, B). 
 
 max_of3a(A, B, C, A):- A >= B, A >= C.
@@ -41,4 +41,4 @@ max_of3b(_, _, C, C).
 
 goal
 
-  max_of2b(1, 3, B).
+  max_of2b(3, 1, Z).

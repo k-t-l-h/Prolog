@@ -75,5 +75,7 @@ clauses
     	con(L1, [], L1).
     	con(L1, L2, L3):- append(L1, L2, L3),len(L1, N1),len(L2, N2),N1<N2,!.
     	con(L1, L2, L3):- append(L2, L1, L3).
+    	
+    	
 goal
 	delete_once([1, 2, 3, 4, 5, 3], 3, RES).

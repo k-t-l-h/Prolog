@@ -41,4 +41,4 @@ max_of3b(_, _, C, C).
 
 goal
 
-  max_of2b(1, 3, Z).
+  max_of2b(1, 3, B).
